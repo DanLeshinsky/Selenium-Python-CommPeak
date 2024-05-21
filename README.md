@@ -1,4 +1,4 @@
-# Playwright & Pytest
+# Selenium & Pytest
 
 This project demonstrates a comprehensive setup for Web testing. It's designed to showcase best practices in creating and managing a robust testing environment using advanced technologies and patterns.
 
