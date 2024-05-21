@@ -18,8 +18,6 @@ class TestPythonDownloads(BaseTest):
         button_href = self.python_org_downloads_page.get_download_button_href()
         expected_href = f"https://www.python.org/ftp/python/{button_version}/python-{button_version}-amd64.exe"
         assert button_href == expected_href, f"Expected {expected_href}, but got {button_href}"
-
-        # Step d: Check that Python version 3.8 has end of support as '2024-10' in the table 'Active Python Releases'
         self.python_org_downloads_page.check_python_version_eos("3.8", "2024-10")
 
     @pytest.mark.smoke
